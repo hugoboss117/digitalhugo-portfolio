@@ -508,6 +508,16 @@ section,
   overflow: clip;
 }
 
+/* A-Frame Viewer Styles */
+.a-frame-scene {
+  width: 100%; /* Ensures the viewer takes up the full width of its container */
+  height: 500px; /* Sets the height of the viewer */
+  margin-bottom: 20px; /* Adds space below the viewer */
+  position: relative; /* Positioning context for the viewer */
+  overflow: hidden; /* Prevents any overflow content from showing */
+}
+
+
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
@@ -570,10 +580,12 @@ section,
   z-index: 2;
 }
 
-.hero .container {
-  position: relative;
-  z-index: 3;
-}
+    .hero .container {
+        position: absolute;
+        top: 1%; /* Adjust this value to move the text up or down */
+        transform: translate(-1%, 0); /* Adjusts positioning to center */
+        z-index: 3;
+    }
 
 .hero h2 {
   margin: 0;
